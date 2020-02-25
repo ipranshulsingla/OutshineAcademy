@@ -1,0 +1,212 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:large;
+}
+
+#outshine{
+    overflow-x: hidden;
+}
+
+#bg-layer{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#home{
+    padding:1%;
+}
+
+header{
+    background-color: rgba(65,61,67,0.5);
+    position: sticky;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info li{
+    list-style:none;
+    margin: 10px;
+}
+
+.width-100{
+    width: 100%;
+}
+
+span{
+    display: inline;
+    margin: 5px;
+    color: white
+}
+
+.info li a,.info li{
+    color: white !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav a{
+    color:white;
+    font-family: inherit;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color:#A0BE25;
+}
+
+.nav ul{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+
+}
+
+section{
+    margin-top: 1%;
+    box-sizing: border-box;
+}
+
+#enquiry{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#enquiry form{
+    width: 100%;
+    margin: 8%;
+}
+
+.form-style{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.form-style .ele{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #A0BE25;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-style button{
+    background-color: #A0BE25;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form-style h1{
+    color: #A0BE25;
+}
+
+.about{
+    color:white;
+    background-color: rgba(65,61,67,0.5);
+    border-radius: 5px;
+}
+
+.logo{
+    margin-top: -4%;
+}
+
+.about h2{
+    text-align: center;
+}
+
+.box{
+    justify-content:space-between;
+}
+
+.box .icon{
+    font-size: xx-large;
+}
+
+#services{
+    margin-top: 1%;
+}
+
+#services h2{
+ color: #A0BE25;
+ text-align: center;
+ font-weight: bolder;
+}
+
+.box>*{
+    box-sizing: content-box;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    background-color:#037487;
+    color: white;
+    text-align: center;
+    border: #A0BE25 3px solid;
+    border-radius: 5px;    
+    padding: 3%;
+    font-size: x-large;
+    box-shadow: 8px 8px grey;
+}
+
+@media (max-width: 768px){
+
+    body{
+        font-family: cursive;
+    }
+
+    .nav ul{
+        flex-direction: column;
+    }
+
+    #cont-info{
+        display: none;
+    }
+
+    #bg-layer{
+        background-color: #037487;
+        background-image: none;
+    }
+    
+    .logo-nav{
+        justify-content: center;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        width: 50%;
+        align-items: center;
+    }
+
+    #home>*{
+        margin: 2%;
+        padding: 2%;
+    }
+
+    .box>*{
+        width:65%;
+        justify-content: center;
+    }
+
+    .box{
+        justify-content: center;
+    }
+}
