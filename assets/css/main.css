@@ -211,3 +211,7 @@ section{
         justify-content: center;
     }
 }
+
+select:focus,input:focus{
+    outline: none;
+}
